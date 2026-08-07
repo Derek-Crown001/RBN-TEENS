@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RBN Teens Registration and Parent/Guardian Consent Form">
+  <title>RBN Teens | Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="rbn-teens-logo.png" alt="Repairer of the Breach Network - RBN Teens logo" class="logo">
+      <div>
+        <p class="eyebrow">REPAIRER OF THE BREACH NETWORK</p>
+        <h1>RBN Teens</h1>
+        <p class="tagline">Rooted in Christ • Equipped for Life • Made to Impact</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <span class="badge">RBN TEENS</span>
+      <h2>Registration & Parent/Guardian Consent Form</h2>
+      <p>Raising godly teenagers in today's world through faith, character, purpose, mentorship and community.</p>
+    </section>
+
+    <div class="progress-wrap" aria-label="Form progress">
+      <div class="progress-top"><span id="progressText">Section 1 of 6</span><span id="progressPercent">17%</span></div>
+      <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+    </div>
+
+    <form id="rbnForm" novalidate>
+      <section class="form-section active" data-section="1">
+        <div class="section-heading">
+          <span>01</span>
+          <div><h3>Parent/Guardian Information</h3><p>This section should be completed by the parent or legal guardian.</p></div>
+        </div>
+
+        <div class="grid">
+          <div class="field full">
+            <label for="guardianName">Parent/Guardian Full Name <span>*</span></label>
+            <input id="guardianName" name="guardianName" type="text" autocomplete="name" required>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="relationship">Relationship with Teenager <span>*</span></label>
+            <select id="relationship" name="relationship" required>
+              <option value="">Select one</option>
+              <option>Mother</option><option>Father</option><option>Guardian</option><option>Other</option>
+            </select>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="guardianPhone">Parent/Guardian WhatsApp Number <span>*</span></label>
+            <input id="guardianPhone" name="guardianPhone" type="tel" placeholder="+234..." autocomplete="tel" required>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="guardianEmail">Email Address</label>
+            <input id="guardianEmail" name="guardianEmail" type="email" autocomplete="email">
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="contactMethod">Preferred Contact Method <span>*</span></label>
+            <select id="contactMethod" name="contactMethod" required>
+              <option value="">Select one</option>
+              <option>WhatsApp</option><option>Phone Call</option><option>Email</option>
+            </select>
+            <small class="error"></small>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section" data-section="2">
+        <div class="section-heading">
+          <span>02</span>
+          <div><h3>Teenager's Information</h3><p>Please provide basic information about the teenager.</p></div>
+        </div>
+        <div class="grid">
+          <div class="field">
+            <label for="teenName">Teenager's Full Name <span>*</span></label>
+            <input id="teenName" name="teenName" type="text" required>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="preferredName">Preferred Name <span>*</span></label>
+            <input id="preferredName" name="preferredName" type="text" required>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="age">Age <span>*</span></label>
+            <select id="age" name="age" required>
+              <option value="">Select age</option>
+              <option>11</option><option>12</option><option>13</option><option>14</option>
+              <option>15</option><option>16</option><option>17</option><option>18</option>
+            </select>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="gender">Gender <span>*</span></label>
+            <select id="gender" name="gender" required>
+              <option value="">Select one</option>
+              <option>Male</option><option>Female</option><option>Prefer not to say</option>
+            </select>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="teenPhone">Teenager's WhatsApp Number</label>
+            <input id="teenPhone" name="teenPhone" type="tel" placeholder="+234...">
+            <small class="hint">Leave blank if the teenager does not have a personal WhatsApp number.</small>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="school">Name of School</label>
+            <input id="school" name="school" type="text">
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="classLevel">Current Class <span>*</span></label>
+            <select id="classLevel" name="classLevel" required>
+              <option value="">Select class</option>
+              <option>JSS1</option><option>JSS2</option><option>JSS3</option>
+              <option>SS1</option><option>SS2</option><option>SS3</option><option>Other</option>
+            </select>
+            <small class="error"></small>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section" data-section="3">
+        <div class="section-heading">
+          <span>03</span>
+          <div><h3>Getting to Know the Teenager</h3><p>Your answers help us make RBN Teens meaningful and relevant.</p></div>
+        </div>
+        <div class="grid">
+          <div class="field full">
+            <label for="faith">How would you describe your relationship with God? <span>*</span></label>
+            <select id="faith" name="faith" required>
+              <option value="">Select one</option>
+              <option>I have a strong relationship with God.</option>
+              <option>I am growing in my relationship with God.</option>
+              <option>I am still learning about God.</option>
+              <option>I have questions about my faith.</option>
+              <option>I am not sure yet.</option>
+            </select>
+            <small class="error"></small>
+          </div>
+
+          <div class="field full">
+            <label>What would you like to learn or grow in through RBN Teens? <span>*</span></label>
+            <div class="checks">
+              <label><input type="checkbox" name="growth" value="Bible knowledge"> Bible knowledge</label>
+              <label><input type="checkbox" name="growth" value="Prayer"> Prayer</label>
+              <label><input type="checkbox" name="growth" value="Knowing God's will"> Knowing God's will</label>
+              <label><input type="checkbox" name="growth" value="Purpose discovery"> Purpose discovery</label>
+              <label><input type="checkbox" name="growth" value="Godly character"> Godly character</label>
+              <label><input type="checkbox" name="growth" value="Leadership"> Leadership</label>
+              <label><input type="checkbox" name="growth" value="Relationships"> Relationships & friendships</label>
+              <label><input type="checkbox" name="growth" value="Peer pressure"> Dealing with peer pressure</label>
+              <label><input type="checkbox" name="growth" value="Social media"> Social media & digital life</label>
+              <label><input type="checkbox" name="growth" value="Identity"> Identity & confidence</label>
+              <label><input type="checkbox" name="growth" value="Academics"> Academic development</label>
+              <label><input type="checkbox" name="growth" value="Career"> Career & future</label>
+              <label><input type="checkbox" name="growth" value="Emotional maturity"> Emotional maturity</label>
+            </div>
+            <small class="error group-error"></small>
+          </div>
+
+          <div class="field full">
+            <label for="faithQuestion">What is one question about God, faith, or life that you would like us to discuss?</label>
+            <textarea id="faithQuestion" name="faithQuestion" rows="4"></textarea>
+          </div>
+
+          <div class="field full">
+            <label for="challenge">What do you think is one of the biggest challenges teenagers face today? <span>*</span></label>
+            <textarea id="challenge" name="challenge" rows="4" required></textarea>
+            <small class="error"></small>
+          </div>
+
+          <div class="field">
+            <label for="passion">What are you passionate about?</label>
+            <textarea id="passion" name="passion" rows="4"></textarea>
+          </div>
+          <div class="field">
+            <label for="goal">What is something you would like to achieve in the next few years?</label>
+            <textarea id="goal" name="goal" rows="4"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section" data-section="4">
+        <div class="section-heading">
+          <span>04</span>
+          <div><h3>Interests & Activities</h3><p>Tell us what would make the community engaging.</p></div>
+        </div>
+        <div class="field full">
+          <label>Which activities would you enjoy in RBN Teens? <span>*</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="activities" value="Bible study"> Bible study</label>
+            <label><input type="checkbox" name="activities" value="Prayer meetings"> Prayer meetings</label>
+            <label><input type="checkbox" name="activities" value="Worship"> Worship</label>
+            <label><input type="checkbox" name="activities" value="Games"> Games</label>
+            <label><input type="checkbox" name="activities" value="Christian movies"> Christian movies</label>
+            <label><input type="checkbox" name="activities" value="Bible quizzes"> Bible quizzes</label>
+            <label><input type="checkbox" name="activities" value="Debates"> Debates</label>
+            <label><input type="checkbox" name="activities" value="Creative activities"> Talent & creative activities</label>
+            <label><input type="checkbox" name="activities" value="Career talks"> Career talks</label>
+            <label><input type="checkbox" name="activities" value="Purpose discovery"> Purpose discovery</label>
+            <label><input type="checkbox" name="activities" value="Leadership"> Leadership training</label>
+            <label><input type="checkbox" name="activities" value="Mentorship"> Mentorship</label>
+            <label><input type="checkbox" name="activities" value="Teen discussions"> Teen discussions</label>
+            <label><input type="checkbox" name="activities" value="Community service"> Community service</label>
+          </div>
+          <small class="error group-error"></small>
+        </div>
+        <div class="field full">
+          <label for="meaningful">What would make RBN Teens an exciting and meaningful community for you?</label>
+          <textarea id="meaningful" name="meaningful" rows="5"></textarea>
+        </div>
+      </section>
+
+      <section class="form-section" data-section="5">
+        <div class="section-heading">
+          <span>05</span>
+          <div><h3>Parent/Guardian Consent</h3><p>Please read the statement carefully before confirming.</p></div>
+        </div>
+        <div class="consent-box">
+          <h4>Consent Statement</h4>
+          <p>I confirm that I am the parent or legal guardian of the teenager named in this form.</p>
+          <p>I understand that RBN Teens is a Christian youth community organized by the Repairer of the Breach Network to encourage spiritual growth, biblical understanding, godly character, healthy relationships, purpose discovery, leadership development, and positive personal development.</p>
+          <p>I give permission for my teenager to participate in the RBN Teens WhatsApp community and its activities.</p>
+          <p>I understand that the community will have guidelines designed to promote respect, appropriate communication, safety, and responsible participation.</p>
+          <p>I understand that the RBN Teens leadership may take reasonable steps to address inappropriate behaviour or content in order to protect the community.</p>
+          <p>I understand that I may contact the RBN Teens leadership regarding any concern about my teenager's participation.</p>
+        </div>
+        <label class="consent-check">
+          <input id="consent" name="consent" type="checkbox" required>
+          <span>I have read and understood the above statement, and I give permission for my teenager to participate in RBN Teens. <b>*</b></span>
+        </label>
+        <small class="error" id="consentError"></small>
+
+        <div class="grid consent-details">
+          <div class="field">
+            <label for="consentName">Parent/Guardian Name <span>*</span></label>
+            <input id="consentName" name="consentName" type="text" required>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="consentDate">Date of Consent <span>*</span></label>
+            <input id="consentDate" name="consentDate" type="date" required>
+            <small class="error"></small>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section" data-section="6">
+        <div class="section-heading">
+          <span>06</span>
+          <div><h3>Community Guidelines & Final Note</h3><p>Help us keep RBN Teens respectful, safe and Christ-centered.</p></div>
+        </div>
+        <div class="guidelines">
+          <ol>
+            <li>Respect everyone.</li>
+            <li>No bullying, insults, harassment, or humiliation.</li>
+            <li>No inappropriate or sexually explicit content.</li>
+            <li>No sharing of offensive images, videos, or messages.</li>
+            <li>Do not ask other members for private or unnecessary personal information.</li>
+            <li>Do not share another person's pictures, messages, or personal information without permission.</li>
+            <li>No abusive, threatening, or discriminatory language.</li>
+            <li>Discussions should remain appropriate and respectful.</li>
+            <li>Members should respect the instructions of the RBN Teens moderators.</li>
+            <li>The group should be a place where teenagers can learn, grow, ask questions, and encourage one another.</li>
+          </ol>
+        </div>
+        <label class="consent-check">
+          <input id="guidelines" name="guidelines" type="checkbox" required>
+          <span>I have read and agree to follow the RBN Teens Community Guidelines. <b>*</b></span>
+        </label>
+        <small class="error" id="guidelinesError"></small>
+
+        <div class="field full final-note">
+          <label for="finalNote">Is there anything you would like the RBN Teens leadership to know?</label>
+          <textarea id="finalNote" name="finalNote" rows="5" placeholder="Optional. Please do not share passwords, financial information, private medical information, or other highly personal information."></textarea>
+        </div>
+      </section>
+
+      <div class="form-actions">
+        <button type="button" class="btn secondary" id="backBtn">Back</button>
+        <button type="button" class="btn primary" id="nextBtn">Continue</button>
+        <button type="submit" class="btn primary hidden" id="submitBtn">Submit Registration</button>
+      </div>
+      <p class="form-note">Fields marked with <span>*</span> are required.</p>
+    </form>
+
+    <section id="success" class="success-card hidden" aria-live="polite">
+      <div class="success-icon">✓</div>
+      <p class="eyebrow">REGISTRATION RECEIVED</p>
+      <h2>Thank you, <span id="successName">RBN family</span>!</h2>
+      <p>Your RBN Teens registration has been received successfully.</p>
+      <p>We are excited about what God will do in and through this generation. Please wait for further communication from the RBN Teens leadership regarding confirmation and joining instructions.</p>
+      <div class="success-brand">RBN TEENS<br><small>Rooted in Christ • Equipped for Life • Made to Impact</small></div>
+      <button type="button" class="btn primary" id="newRegistration">Register Another Teenager</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>REPAIRER OF THE BREACH NETWORK</p>
+    <span>Raising Teenagers • Building Destinies • Impacting Generations</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
